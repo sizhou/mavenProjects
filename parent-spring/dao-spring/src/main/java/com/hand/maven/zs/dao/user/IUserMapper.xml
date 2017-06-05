@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.maven.zs.dao.user.IUserDao">
+    
+    
+    <select id="findUserEntityById" resultType="com.hand.maven.zs.model.user.UserEntity">
+        select
+            ubuserId as id,
+            username as userName,
+            firstName as firstName
+        from UBUser where ubuserId=#{id}
+    </select>
+    
+</mapper>
