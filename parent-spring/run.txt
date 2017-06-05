@@ -1,0 +1,6 @@
+1.打包编译mvn package 
+
+2.将web模块的target编译目录下的myweb-spring.war部署到服务器上（http://localhost:8080/manager/）
+
+3.访问接口localhost:8080/myweb-spring/user/findUserById?id=1
+
